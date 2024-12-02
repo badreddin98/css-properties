@@ -1,0 +1,95 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background: #f0f0f0;
+    line-height: 1.6;
+}
+
+/* Task 1: RGBA Background Colors */
+.background-fade {
+    background-color: rgba(0, 123, 255, 0.3);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Task 2: Enhanced Text with RGBA */
+.enhanced-text {
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    background-color: rgba(33, 37, 41, 0.8);
+    padding: 15px;
+    border-radius: 5px;
+}
+
+/* Task 3: Interactive Button with RGBA */
+.interactive-button {
+    background-color: rgba(40, 167, 69, 0.8);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.interactive-button:hover {
+    background-color: rgba(40, 167, 69, 1);
+}
+
+/* Smooth Link Transitions */
+.smooth-link {
+    color: rgba(0, 123, 255, 0.8);
+    text-decoration: none;
+    margin-right: 20px;
+    transition: color 0.3s ease;
+}
+
+.smooth-link:hover {
+    color: rgba(0, 123, 255, 1);
+}
+
+/* Click Animation for Button */
+.click-animate {
+    padding: 10px 20px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.1s ease;
+}
+
+.click-animate:active {
+    animation: clickEffect 0.2s ease;
+}
+
+@keyframes clickEffect {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+/* Rotating Icon Animation */
+.rotating-icon {
+    font-size: 2em;
+    color: #6610f2;
+    display: inline-block;
+    animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* Section Styling */
+.text-section, .button-section, .links-section, .animated-button-section, .icon-section {
+    margin: 30px 0;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
